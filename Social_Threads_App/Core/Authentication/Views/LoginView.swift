@@ -16,7 +16,7 @@ struct LoginView: View {
             VStack {
                 Spacer()
                 
-                Image("threads_app_icon")
+                Image(systemName: "person.line.dotted.person.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 120, height: 120)
