@@ -16,6 +16,8 @@
 		5187B9822C44F8A1000F9ADE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187B9812C44F8A1000F9ADE /* AuthService.swift */; };
 		5187B9A22C458D3E000F9ADE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187B9A12C458D3E000F9ADE /* ContentViewModel.swift */; };
 		5187B9A42C4591DF000F9ADE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187B9A32C4591DF000F9ADE /* LoginViewModel.swift */; };
+		5187B9B22C47A1CE000F9ADE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187B9B12C47A1CE000F9ADE /* User.swift */; };
+		5187B9B42C47A206000F9ADE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187B9B32C47A206000F9ADE /* UserService.swift */; };
 		51DD66C02C3A5C02000352CB /* Social_Threads_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD66BF2C3A5C02000352CB /* Social_Threads_AppApp.swift */; };
 		51DD66C22C3A5C02000352CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD66C12C3A5C02000352CB /* ContentView.swift */; };
 		51DD66C42C3A5C04000352CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51DD66C32C3A5C04000352CB /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		5187B9812C44F8A1000F9ADE /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5187B9A12C458D3E000F9ADE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		5187B9A32C4591DF000F9ADE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5187B9B12C47A1CE000F9ADE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5187B9B32C47A206000F9ADE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		51DD66BC2C3A5C02000352CB /* Social_Threads_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social_Threads_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DD66BF2C3A5C02000352CB /* Social_Threads_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social_Threads_AppApp.swift; sourceTree = "<group>"; };
 		51DD66C12C3A5C02000352CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,12 +91,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		5187B97E2C44F718000F9ADE /* Services */ = {
+		5187B97E2C44F718000F9ADE /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				5187B9812C44F8A1000F9ADE /* AuthService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		5187B99F2C458D09000F9ADE /* View */ = {
@@ -109,6 +113,29 @@
 				5187B9A12C458D3E000F9ADE /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5187B9AE2C47A166000F9ADE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5187B9AF2C47A197000F9ADE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5187B9B32C47A206000F9ADE /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5187B9B02C47A1C2000F9ADE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5187B9B12C47A1CE000F9ADE /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		51DD66B32C3A5C02000352CB = {
@@ -132,9 +159,9 @@
 			children = (
 				51DD66CD2C3A5E8E000352CB /* App */,
 				51DD66CE2C3A5EAB000352CB /* Core */,
-				51DD66D12C3A5EDE000352CB /* Services */,
-				51DD66D02C3A5ED7000352CB /* Model */,
-				51DD66CF2C3A5ED1000352CB /* Extensions */,
+				5187B9AE2C47A166000F9ADE /* Extensions */,
+				5187B9B02C47A1C2000F9ADE /* Model */,
+				5187B9AF2C47A197000F9ADE /* Services */,
 				51DD66D22C3A5EE5000352CB /* Utils */,
 				5187B9722C44F344000F9ADE /* GoogleService-Info.plist */,
 				51DD66C32C3A5C04000352CB /* Assets.xcassets */,
@@ -175,27 +202,6 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		51DD66CF2C3A5ED1000352CB /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		51DD66D02C3A5ED7000352CB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		51DD66D12C3A5EDE000352CB /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		51DD66D22C3A5EE5000352CB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +213,7 @@
 		51DD66D32C3A5F48000352CB /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				5187B97E2C44F718000F9ADE /* Services */,
+				5187B97E2C44F718000F9ADE /* Service */,
 				51DD66D52C3A5F6A000352CB /* Views */,
 				5187B97D2C44F70B000F9ADE /* ViewModel */,
 			);
@@ -450,6 +456,7 @@
 				5187B9822C44F8A1000F9ADE /* AuthService.swift in Sources */,
 				51DD67542C3C4BCA000352CB /* EditProfileView.swift in Sources */,
 				51DD66C22C3A5C02000352CB /* ContentView.swift in Sources */,
+				5187B9B42C47A206000F9ADE /* UserService.swift in Sources */,
 				51DD671E2C3B1053000352CB /* ThreadCell.swift in Sources */,
 				51DD67172C3B0EAB000352CB /* ActivityView.swift in Sources */,
 				5187B9A42C4591DF000F9ADE /* LoginViewModel.swift in Sources */,
@@ -464,6 +471,7 @@
 				51DD670F2C3B0E43000352CB /* ExploreView.swift in Sources */,
 				51DD671C2C3B0ED3000352CB /* ProfileView.swift in Sources */,
 				51DD66D92C3A641A000352CB /* RegistrationView.swift in Sources */,
+				5187B9B22C47A1CE000F9ADE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
