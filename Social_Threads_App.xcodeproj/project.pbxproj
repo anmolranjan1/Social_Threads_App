@@ -10,6 +10,9 @@
 		512E77472C7106DA00BE1F0C /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512E77462C7106DA00BE1F0C /* EditProfileViewModel.swift */; };
 		512E77492C71086A00BE1F0C /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512E77482C71086A00BE1F0C /* ImageUploader.swift */; };
 		512E774C2C71108E00BE1F0C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 512E774B2C71108E00BE1F0C /* Kingfisher */; };
+		512E774E2C71227900BE1F0C /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512E774D2C71227900BE1F0C /* Thread.swift */; };
+		512E77512C71237200BE1F0C /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512E77502C71237200BE1F0C /* CreateThreadViewModel.swift */; };
+		512E77532C71239100BE1F0C /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512E77522C71239100BE1F0C /* ThreadService.swift */; };
 		5187B9732C44F344000F9ADE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5187B9722C44F344000F9ADE /* GoogleService-Info.plist */; };
 		5187B9762C44F3F2000F9ADE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5187B9752C44F3F2000F9ADE /* FirebaseAuth */; };
 		5187B9782C44F3F2000F9ADE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5187B9772C44F3F2000F9ADE /* FirebaseFirestore */; };
@@ -50,6 +53,9 @@
 /* Begin PBXFileReference section */
 		512E77462C7106DA00BE1F0C /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		512E77482C71086A00BE1F0C /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		512E774D2C71227900BE1F0C /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		512E77502C71237200BE1F0C /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
+		512E77522C71239100BE1F0C /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		5187B9722C44F344000F9ADE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5187B97F2C44F76A000F9ADE /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		5187B9812C44F8A1000F9ADE /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -108,6 +114,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		512E774F2C71235600BE1F0C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				512E77502C71237200BE1F0C /* CreateThreadViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		5187B97D2C44F70B000F9ADE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +168,7 @@
 			children = (
 				5187B9B32C47A206000F9ADE /* UserService.swift */,
 				512E77482C71086A00BE1F0C /* ImageUploader.swift */,
+				512E77522C71239100BE1F0C /* ThreadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -162,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				5187B9B12C47A1CE000F9ADE /* User.swift */,
+				512E774D2C71227900BE1F0C /* Thread.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				51DD67112C3B0E72000352CB /* Views */,
+				512E774F2C71235600BE1F0C /* ViewModel */,
 			);
 			path = ThreadCreation;
 			sourceTree = "<group>";
@@ -535,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51DD670A2C3B0DCA000352CB /* FeedView.swift in Sources */,
+				512E774E2C71227900BE1F0C /* Thread.swift in Sources */,
 				5187B9802C44F76A000F9ADE /* RegistrationViewModel.swift in Sources */,
 				51DD66D72C3A5F84000352CB /* LoginView.swift in Sources */,
 				5187B9822C44F8A1000F9ADE /* AuthService.swift in Sources */,
@@ -547,6 +565,7 @@
 				51FADD322C708D7900A5A9CB /* UserContentListView.swift in Sources */,
 				51DD67172C3B0EAB000352CB /* ActivityView.swift in Sources */,
 				5187B9A42C4591DF000F9ADE /* LoginViewModel.swift in Sources */,
+				512E77512C71237200BE1F0C /* CreateThreadViewModel.swift in Sources */,
 				51DD67212C3B17BE000352CB /* CircularProfileImageView.swift in Sources */,
 				51DD67232C3B184D000352CB /* UserCell.swift in Sources */,
 				51FADD252C6FB44B00A5A9CB /* ExploreViewModel.swift in Sources */,
@@ -564,6 +583,7 @@
 				51DD671C2C3B0ED3000352CB /* ProfileView.swift in Sources */,
 				51DD66D92C3A641A000352CB /* RegistrationView.swift in Sources */,
 				5187B9B22C47A1CE000F9ADE /* User.swift in Sources */,
+				512E77532C71239100BE1F0C /* ThreadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
