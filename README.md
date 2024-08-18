@@ -15,8 +15,6 @@ Social Threads App is an iOS application that allows users to connect, share, an
   - [Backend Integration](#backend-integration)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
