@@ -63,7 +63,7 @@ To get started with Social Threads App:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/social-threads-app.git
+   git clone https://github.com/anmolranjan1/Social_Threads_App.git
    ```
 2. **Open the project in Xcode**.
 3. **Install dependencies**:
